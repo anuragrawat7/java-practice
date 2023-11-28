@@ -1,7 +1,5 @@
 package main.java.dsaPractice;
 
-import java.util.Arrays;
-
 public class ArraysPractice {
     public static void main(String[] args) {
         int x = 25;
@@ -191,5 +189,3 @@ public static void main(String[] args) {
 //        arr[start] = arr[end];
 //        arr[end] = temp;
 //    }*/
-
-}
