@@ -1,5 +1,7 @@
 package main.java.javaCode.oops;
 
+import main.java.javaCode.SingletonClass;
+
 public class StaticKeyword {
 
     /*
