@@ -1,7 +1,72 @@
 package main.java.dsaPractice;
 
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
 public class ArraysPractice {
+
+}
+/*
+class Solution {
+
+//    https://leetcode.com/problems/count-the-number-of-consistent-strings/
+
     public static void main(String[] args) {
+        String[] words = {"ad","bd","aaab","baa","badab"};
+        System.out.println(countConsistentStrings("ab", words));
+    }
+    public static int countConsistentStrings(String allowed, String[] words) {
+        int result=0;
+        Set<Character> allowedSet = new HashSet<>();
+        for (char c : allowed.toCharArray()) {
+            allowedSet.add(c);
+        }
+
+        for (String word : words) {
+            boolean isConsistent = true;
+            for (char c : word.toCharArray()) {
+                if (!allowedSet.contains(c)) {
+                    isConsistent = false;
+                    break;
+                }
+            }
+
+            if (isConsistent) {
+                result++;
+            }
+        }
+        return result;
+    }
+}
+*/
+
+/*
+
+class Solution {
+
+//    https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/
+
+    public static void main(String[] args) {
+        String[] word1 = {"Anurag", "Rawat"};
+        String[] word2 = {"Anu", "ragRawat"};
+        System.out.println(arrayStringsAreEqual(word1, word2));
+    }
+    public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
+        StringBuilder stringBuilder = new StringBuilder();
+        StringBuilder stringBuilder2 = new StringBuilder();
+        for (String word: word1) {
+            stringBuilder.append(word);
+        }
+        for (String word: word2) {
+            stringBuilder2.append(word);
+        }
+        return stringBuilder.toString().equals(stringBuilder2.toString());
+    }
+}
+*/
+
+/*    public static void main(String[] args) {
         int x = 25;
         System.out.println(sqrtOfX(x));
     }
@@ -20,7 +85,35 @@ public class ArraysPractice {
         }
         return (int) end;
     }
-}
+}*/
+
+/*
+class Solution {
+
+//    https://leetcode.com/problems/richest-customer-wealth/
+
+    public static void main(String[] args) {
+        int[][] accounts = {{1, 2, 3},{3, 2, 1}, {3, 5, 1}};
+        System.out.println("-  " + maximumWealth(accounts));
+    }
+    public static int maximumWealth(int[][] accounts) {
+        int max=0;
+        int temp=0;
+        for (int i = 0; i < accounts.length; i++) {
+            temp=0;
+            System.out.println("---- "+accounts.length);
+            for (int j = 0; j < accounts[i].length; j++) {
+                temp += accounts[i][j];
+                System.out.println(accounts[i][j]);
+            }
+            if(temp >= max) {
+                max = temp;
+            }
+            System.out.println("--------");
+        }
+        return max;
+    }
+}*/
 
     /*
     ----------------------------------------------
